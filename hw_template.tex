@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+
+%-----------------------------------------------------------------
+% Document information definitions
+%-----------------------------------------------------------------
+\newcommand{\name}{NAME}
+\newcommand{\course}{COURSE}
+\newcommand{\assignment}{ASSIGNMENT}
+\newcommand{\duedate}{DUE}
+% Bonus defs, not used by default
+\newcommand{\instructor}{INSTRUCTOR}
+\newcommand{\semester}{SEMESTER}
+\newcommand{\problems}{PROBLEMS}
+
+%-----------------------------------------------------------------
+% Package includes
+%-----------------------------------------------------------------
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{amssymb,latexsym}
+\usepackage{amsthm}
+\usepackage{bibentry}
+\usepackage{caption}
+\usepackage{cite}
+%\usepackage{clrscode}
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage[left=1.0in,right=1.0in,top=0.75in,bottom=0.5in]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{times}
+\usepackage{verbatim}
+
+%-----------------------------------------------------------------
+% Define some document headers for various purposes
+%-----------------------------------------------------------------
+% First page
+\newcommand{\hwtitle}{
+    \begin{flushleft}
+        \assignment     \hspace*{\fill}         \name       \\
+        \course         \hspace*{\fill}         \duedate    \\
+        \rule[10pt]{\linewidth}{0.5pt}
+    \end{flushleft}
+}
+% Subsequent pages
+\pagestyle{myheadings}
+\markright{\course{} \assignment: \name}
+
+%-----------------------------------------------------------------
+% Useful shortcut commands
+% TODO: These could be grouped into a package at some point
+%-----------------------------------------------------------------
+% Probability of...
+\newcommand{\pr}{
+    \mathrm{P}
+}
+
+%-----------------------------------------------------------------
+% Define an exercise environment, with two parameters:
+%   -- how to refer to it: Exercise, Problem, etc. (optional)
+%   -- the exercise number
+%-----------------------------------------------------------------
+\newenvironment{exercise}[2][]
+{\begin{trivlist}
+    \item[\hspace{0pt} \textbf{#1}~\textbf{#2.}]}
+{\end{trivlist}}
+
+%-----------------------------------------------------------------
+% Begin document content
+%-----------------------------------------------------------------
+\begin{document}
+\thispagestyle{empty}
+\hwtitle
+
+\begin{exercise}{1}
+% question text
+\end{exercise}
+
+\end{document}
