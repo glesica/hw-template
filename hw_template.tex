@@ -29,6 +29,7 @@
 \usepackage[left=1.0in,right=1.0in,top=0.75in,bottom=0.5in]{geometry}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{listings}
 \usepackage{subcaption}
 \usepackage{times}
 \usepackage{verbatim}
@@ -55,6 +56,23 @@
 % Probability of...
 \newcommand{\pr}{
     \mathrm{P}
+}
+
+%-----------------------------------------------------------------
+% Default settings for the listings package
+%-----------------------------------------------------------------
+\lstset{
+    basicstyle=\footnotesize,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=5,
+    numbersep=5pt,
+    backgroundcolor=\color{white},
+    tabsize=2,
+    breaklines=true,
+    breakatwhitespace=true,
+    title=\lstname,
+    caption=\lstname,
 }
 
 %-----------------------------------------------------------------
